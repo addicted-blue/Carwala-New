@@ -1,0 +1,12 @@
+﻿#contact {
+    background: #FFF;
+    color: #807d7d;
+}
+.txt_aln_lft{
+    text-align:left;
+}
+@media (min-width: 992px) {
+    .content-section-form {
+        padding-top: 180px;
+    }
+}

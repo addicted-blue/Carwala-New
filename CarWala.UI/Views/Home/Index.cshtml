@@ -1,0 +1,103 @@
+﻿@{
+    ViewBag.Title = "Car Wala";
+}
+<!-- About Section -->
+<section id="about" class="content-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>About Grayscale</h2>
+                <p>
+                    Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
+                    <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.
+                </p>
+                <p>
+                    This theme features stock photos by
+                    <a href="http://gratisography.com/">Gratisography</a>
+                    along with a custom Google Maps skin courtesy of
+                    <a href="http://snazzymaps.com/">Snazzy Maps</a>.
+                </p>
+                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Download Section -->
+<section id="download" class="download-section content-section text-center">
+    <div class="container">
+        <div class="col-lg-8 mx-auto">
+            <h2>Download Grayscale</h2>
+            <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
+            <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="content-section text-center content-section-form" ng-controller="mainCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p>Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!</p>
+                <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+                <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+                <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+                <form>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6 txt_aln_lft">
+                                <label for="exampleInputName">First name</label>
+                                <input type="text" name="FirstName" ng-model="requestForm.FirstName" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter first name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleInputLastName">Last name</label>
+                                <input type="text" name="LastName" ng-model="requestForm.LastName" class="form-control" id="exampleInputLastName" aria-describedby="nameHelp" placeholder="Enter last name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group txt_aln_lft">
+                        <div class="form-row">
+                            <div class="col-md-6 txt_aln_lft">
+                                <label for="exampleInputName">Email Address</label>
+                                <input type="email" name="EmailAddress" ng-model="requestForm.EmailAddress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleInputLastName">Contact Number</label>
+                                <input type="text" name="Contact" ng-model="requestForm.Contact" class="form-control" id="exampleInputLastName" aria-describedby="nameHelp" placeholder="Enter last name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6 txt_aln_lft">
+                                <label for="exampleInputName">Pick Up Location</label>
+                                <input type="text" name="PickUpLocation" ng-model="requestForm.PickUpLocation" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter first name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleInputLastName">Destination</label>
+                                <input type="text" name="Destination" ng-model="requestForm.Destination" class="form-control" id="exampleInputLastName" aria-describedby="nameHelp" placeholder="Enter last name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6 txt_aln_lft">
+                                <label for="exampleInputName">Journey Date</label>
+                                <input type="text" name="JourneyDate" ng-model="requestForm.JourneyDate"  class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter first name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleInputLastName">Journey Time</label>
+                                <input type="text" name="JourneyTime" ng-model="requestForm.JourneyTime" class="form-control" id="exampleInputLastName" aria-describedby="nameHelp" placeholder="Enter last name">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary btn-block" href="javascript: return void(0);" ng-click="RequestCab()">Request Cab</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
